@@ -1,0 +1,57 @@
+.login-card {
+  width: 40rem;
+  height: 20rem;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 7px;
+  background-color: darkred;
+}
+.shadow-card {
+  box-shadow: 0 24px 36px rgba(186, 59, 4, 3.1), 0 17px 43px rgba(0, 0, 0, 3.06); /* Subtle shadow */
+}
+// .header-icon {
+//   margin-right: 8px; /* Space between icon and other elements */
+//   font-size: 24px; /* Adjust icon size */
+//   align-self: center; /* Align icon vertically */
+// }
+.example-header-image {
+  background-image: url("https://images.unsplash.com/photo-1601301844001-ffd73ed2e88a?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%; /* Makes it circular */
+}
+.header-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  text-align: center; /* Centers text inside the title */
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.form-field {
+  width: 70%; /* You can change this to any percentage */
+  margin: 0 auto; /* Center form fields horizontally */
+}
+
+/* Style the submit button */
+.submit-btn {
+  align-self: center; /* Centers the button horizontally within the flex container */
+  width: 40%; /* Sets the width of the button to 40% of its parent container */
+  padding: 0.5rem 1rem; /* Optional: Adjust the padding to control the button's internal spacing */
+  text-align: center; /* Ensures text inside the button is centered */
+}
+mat-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mat-card-actions {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 25px;
+}

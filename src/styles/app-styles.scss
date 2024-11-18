@@ -1,0 +1,67 @@
+// @import "../../styles/variables.scss";
+@import "variables.scss";
+.spacer {
+  flex: 1 1 auto;
+}
+.mat-toolbar {
+  background-color: $secondary-color;
+}
+.logo button mat-icon {
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+  font-size: 16px;
+
+  border-radius: 50%;
+}
+
+.logo button:hover {
+  transform: scale(1.2);
+}
+.nav-links {
+  display: flex;
+  gap: 4rem;
+}
+
+// .nav-links a {
+//   text-decoration: none;
+//   text-transform: capitalize;
+//   color: #305142;
+//   transition: transform 0.3s ease, color 0.3s ease;
+//   display: flex;
+//   gap: 0.5rem;
+//   text-align: center;
+//   align-items: center;
+//   cursor: pointer;
+// }
+// .nav-links a:hover {
+//   transform: scale(1.1);
+//   color: #fc8019;
+// }
+
+.nav-links {
+  gap: 4rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  :hover {
+    color: $primary-color;
+    transform: scale(1.1);
+  }
+  a {
+    display: flex;
+    text-decoration: none;
+    color: $tertiary-color;
+    transition: transform 0.3s ease, color 0.3s ease;
+    align-items: center;
+    &.active-link {
+      color: $primary-color;
+    }
+  }
+}
+
+.logo {
+  color: #fc8019;
+}
+.logoname {
+  color: #fc8019;
+}

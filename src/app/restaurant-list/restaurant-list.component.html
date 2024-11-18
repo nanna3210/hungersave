@@ -1,0 +1,6 @@
+<div class="m-3 p-3 d-flex flex-row gap-5 flex-wrap">
+  @for (restaura of restaurants; track $index) {
+  <app-restaurant [restaurant]="restaura"></app-restaurant>
+
+  }
+</div>

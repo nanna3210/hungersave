@@ -1,0 +1,49 @@
+<mat-card class="restaurant-card card-radius-border" appearance="outlined">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title class="text-capitalize">{{
+      restaurant?.restaurant_name
+    }}</mat-card-title>
+    <mat-card-subtitle class="text-danger">{{
+      restaurant?.restaurant_id
+    }}</mat-card-subtitle>
+  </mat-card-header>
+  <img
+    mat-card-image
+    [src]="restaurant?.url"
+    alt="Photo of a restaurant"
+    class="fixed-size-img card-radius-border mb-3 elevated-img"
+    [class.mat-elevation-z6]="!isHovered"
+    [class.mat-elevation-z12]="isHovered"
+    (mouseenter)="isHovered = true"
+    (mouseleave)="isHovered = false"
+  />
+  <mat-card-content>
+    <div class="flex flex-column">
+      <p class="card-content-desc text-primary">
+        Experience unparalleled luxury and impeccable service
+      </p>
+      <div
+        class="fw-bold d-flex flex-row gap-1 capitalizeText"
+        style="color: green"
+      >
+        <mat-icon>stars</mat-icon> {{ restaurant?.rating }}
+      </div>
+      <div class="fw-bold text-secondary text-truncate capitalizeText">
+        {{ restaurant?.menutype }}
+      </div>
+      <div class="text-secondary capitalizeText">
+        {{ restaurant?.location }}
+      </div>
+    </div>
+  </mat-card-content>
+
+  <mat-card-actions class="d-flex gap-3">
+    <button mat-raised-button extended color="primary" class="extended-button">
+      LIKE
+    </button>
+
+    <button mat-raised-button extended class="extended-button">SHARE</button>
+    <!-- <button class="btn btn-warning">SHARE</button> -->
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,52 @@
+.restaurant-card {
+  max-width: 400px;
+  // max-height: 300px;
+  overflow: hidden;
+}
+
+.example-header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}
+.card-content-desc {
+  font-weight: 500;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  word-spacing: 5px;
+}
+.fixed-size-img {
+  width: 470px; /* Fixed width */
+  height: 370px; /* Fixed height */
+  object-fit: cover; /* Maintains aspect ratio and fills the container */
+  display: block; /* Ensures it doesn't overflow inline elements */
+}
+.capitalizeText {
+  text-transform: capitalize;
+}
+.card-radius-border {
+  border-radius: 7px;
+}
+.elevated-img {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+  border-radius: 8px; /* Optional rounded corners */
+  overflow: hidden; /* Prevents shadows from appearing inside rounded corners */
+  display: inline-block; /* Ensures the shadow surrounds only the image */
+  transition: box-shadow 1s ease, transform 1s ease;
+}
+.mat-elevation-z6 {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 1s ease, box-shadow 1s ease;
+  transform: scale(1);
+}
+
+.mat-elevation-z12 {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.24);
+  transition: transform 1s ease, box-shadow 1s ease;
+  transform: scale(1.1);
+}
+.extended-button {
+  width: 150px;
+  height: 40px;
+}
